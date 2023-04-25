@@ -7,3 +7,4 @@ CyberJutsu CTF writeups of some workshops
 | --- | --- | --- |
 | File uploads | RCE | [file upload](./file-uploads) |
 | Javascript Type Coercion | RCE | [javascript-security](./javascript-security) |
+| PHP Type Juggling | RCE | [type-juggling](./type-juggling) |
