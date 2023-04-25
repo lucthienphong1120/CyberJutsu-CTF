@@ -94,9 +94,8 @@ Kết quả khi gửi payload trên
 
 > Flag thử thách 1: `CBJS{dc6a2318ff561b711c08fa41ae95e752}`
 
-Giải thích payload (TL;DR)
-
-```
+<details>
+<summary> Giải thích payload </summary>
 Trong NodeJS, module child_process là một module có sẵn khi ta cài đặt NodeJS, nó cung cấp cho ta chức năng tạo 1 tiến trình con (child process).
 
 Cái này kiến thức về hệ điều hành, 1 phần mềm khi chạy sẽ được tính là 1 tiến trình (1 process), cái process này sẽ gọi nhiều process khác và các process khác này là các process con.
@@ -116,7 +115,7 @@ Vậy nên kết quả khi truyền payload require('child_process').exec('ls -l
 Để khắc phục, ta dùng execSync(). Lúc này 1 cờ synchronous được sinh ra để báo hiệu rằng NodeJS phải thực thi process này trước, sau khi thực thi xong mới tiếp tục đến các process khác.
 
 Do đó khi dùng require('child_process').execSync('ls -la') thì process này sẽ được thực thi trước và với ls -la thì nó sẽ in ra các directory và file ở thư mục hiện tại. Sau đó mới thực thi đến đoạn + 1 phía sau.
-```
+</details>
 
 ### Challenge 2 - Goal: RCE
 
