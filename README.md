@@ -6,3 +6,4 @@ CyberJutsu CTF writeups of some workshops
 | Topic | Vuln | Link |
 | --- | --- | --- |
 | File uploads | RCE | [file upload](./file-uploads) |
+| Javascript Type Coercion | RCE | [javascript-security](./javascript-security) |
